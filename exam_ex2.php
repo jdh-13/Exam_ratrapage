@@ -38,7 +38,7 @@ class arrayManager
 		{
 			$nombreCourant = $this->tableau[$cpt];
 
-			if($i = 0)
+			if($cpt = 0)
 			{
 				$grandNomb = $nombreCourant;
 			}
