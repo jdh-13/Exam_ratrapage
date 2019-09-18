@@ -6,31 +6,31 @@
 function LePlusGrandNombre($Tab)
 {
 	//index
-	$i;
+	$cpt;
 	//taille du tableau
 	$finI;
 	//le plus grand nombre
-	$GrandNomb =0;
+	$grandNomb = 0;
 	// le nombre courant 
-	$NombreCourant;
+	$nombreCourant;
 
-	$finI= count($Tab);
+	$finI = count($Tab);
 
 	
-	for($i=0;i<$finI;$i++)
+	for($cpt = 0;i < $finI;$i++)
 	{
-		$NombreCourant=$Tab[$i];
+		$NombreCourant = $Tab[$i];
 
-		if($i=0)
+		if($i = 0)
 		{
-			$GrandNomb=$NombreCourant;
+			$grandNomb = $nombreCourant;
 		}
 
-		if ($NombreCourant>=$GrandNomb) 
+		if ($nombreCourant >= $grandNomb) 
 		{
-			$GrandNomb=$NombreCourant;
+			$grandNomb = $nombreCourant;
 		}
 	}
 
-	return $GrandNomb;
+	return $grandNomb;
 }

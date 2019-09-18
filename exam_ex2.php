@@ -20,36 +20,36 @@ class arrayManager
 	// modification
 	public function setTab($tableau)
 	{
-		$this->tableau=$tableau;
+		$this->tableau = $tableau;
 	}
 
 	function __construct($tableau)
 	{
-		$this->tableau=$tableau;
+		$this->tableau = $tableau;
 	}
 
 	public function plusGrandNombre()
 	{
-		$finI= count($this->tableau);
+		$finI = count($this->tableau);
 
 		$GrandNomb = 0;
 
-		for($i=0;i<$finI;$i++)
+		for($cpt= 0; i < $finI; $i++)
 		{
-			$NombreCourant=$this->tableau[$i];
+			$nombreCourant=$this->tableau[$i];
 
-			if($i=0)
+			if($i = 0)
 			{
-				$GrandNomb=$NombreCourant;
+				$grandNomb = $nombreCourant;
 			}
 
-			if ($NombreCourant>=$GrandNomb) 
+			if ($nombreCourant >= $grandNomb) 
 			{
-				$GrandNomb=$NombreCourant;
+				$grandNomb = $nombreCourant;
 			}	
 		}
 
-		return $GrandNomb;
+		return $grandNomb;
 	}
 
 }
