@@ -8,16 +8,16 @@ function LePlusGrandNombre($Tab)
 	//index
 	$cpt;
 	//taille du tableau
-	$finI;
+	$tailleTab;
 	//le plus grand nombre
 	$grandNomb = 0;
 	// le nombre courant 
 	$nombreCourant;
 
-	$finI = count($Tab);
+	$tailleTab = count($Tab);
 
 	
-	for($cpt = 0; $cpt < $finI; $cpt++)
+	for($cpt = 0; $cpt < $tailleTab; $cpt++)
 	{
 		$nombreCourant = $Tab[$cpt];
 

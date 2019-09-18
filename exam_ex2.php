@@ -30,11 +30,11 @@ class arrayManager
 
 	public function plusGrandNombre()
 	{
-		$finI = count($this->tableau);
+		$tailleTab = count($this->tableau);
 
 		$grandNomb = 0;
 
-		for($cpt= 0; $cpt < $finI; $cpt++)
+		for($cpt= 0; $cpt < $tailleTab; $cpt++)
 		{
 			$nombreCourant = $this->tableau[$cpt];
 
