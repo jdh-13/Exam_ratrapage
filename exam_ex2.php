@@ -32,11 +32,11 @@ class arrayManager
 	{
 		$finI = count($this->tableau);
 
-		$GrandNomb = 0;
+		$grandNomb = 0;
 
-		for($cpt= 0; i < $finI; $i++)
+		for($cpt= 0; $cpt < $finI; $cpt++)
 		{
-			$nombreCourant=$this->tableau[$i];
+			$nombreCourant = $this->tableau[$cpt];
 
 			if($i = 0)
 			{
