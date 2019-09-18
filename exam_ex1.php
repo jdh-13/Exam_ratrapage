@@ -16,7 +16,6 @@ function LePlusGrandNombre($Tab)
 
 	$tailleTab = count($Tab);
 
-	
 	for($cpt = 0; $cpt < $tailleTab; $cpt++)
 	{
 		$nombreCourant = $Tab[$cpt];
