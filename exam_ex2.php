@@ -32,18 +32,20 @@ class arrayManager
 	{
 		$finI= count($this->tableau);
 
+		$GrandNomb = 0;
+
 		for($i=0;i<$finI;$i++)
 		{
 			$NombreCourant=$this->tableau[$i];
 
 			if($i=0)
 			{
-				$NombreCourant=$GrandNomb;
+				$GrandNomb=$NombreCourant;
 			}
 
 			if ($NombreCourant>=$GrandNomb) 
 			{
-				$NombreCourant=$GrandNomb;
+				$GrandNomb=$NombreCourant;
 			}	
 		}
 
